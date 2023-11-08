@@ -34,7 +34,7 @@ thereby constantly evolving and not standing still.
 # Example code
 
 **A part task on the vacancy forntend-developer**
-
+```typescript
 import { FC } from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 
@@ -63,6 +63,8 @@ export const ItemTable: FC<IItemTableProps> = ({ item, index }) => {
 		</Draggable>
 	);
 };
+```
+---
 
 # Language
 
