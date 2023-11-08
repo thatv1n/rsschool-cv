@@ -22,7 +22,7 @@ thereby constantly evolving and not standing still
 # My Skills
 
 * HTML
-* CSS 
+* CSS, SCSS 
 * JavaScript
 * TypeScript (little bit)
 * React JS, Redux Toolkit, Redux Thunk, React Hook, React Router
