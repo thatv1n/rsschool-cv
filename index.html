@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
   <div class="container">
     <div class="title_container">
@@ -25,15 +23,18 @@
           <div class="text_container"><b>Address:</b> Aymanov st. Pavlodar, Kazakhstan</div>
         </li>
         <li>
-          <div class="text_container"><b>E-mail:</b>
-            <a href="mailto:shakhov.ivan.p@gmail.com">shakhov.ivan.p@gmail.com</a>
+          <div class="text_container">
+            <b>E-mail:</b> <a href="mailto:shakhov.ivan.p@gmail.com">shakhov.ivan.p@gmail.com</a>
           </div>
         </li>
         <li>
-          <div class="text_container"><b>GitHub:</b> <a href="https://github.com/thatv1n">thatv1n</a></div>
+          <div class="text_container">
+            <b>GitHub:</b> <a href="https://github.com/thatv1n">thatv1n</a>
+          </div>
         </li>
         <li>
-          <div class="text_container"><b>Codewars:</b> <a href="https://www.codewars.com/users/thatv1n">thatv1n</a>
+          <div class="text_container">
+            <b>Codewars:</b> <a href="https://www.codewars.com/users/thatv1n">thatv1n</a>
           </div>
         </li>
       </ul>
@@ -81,31 +82,34 @@
     <div class="text_container"><b>A part task on the vacancy forntend-developer</b></div>
     <div class="code">
       <pre>
-      import { FC } from 'react';
-      import { Draggable } from 'react-beautiful-dnd';
-      import { IItemTableProps } from './interface';
-      import './style.scss';
-      export const ItemTable: FC&lt;IItemTableProps&gt; = ({ item, index }) =&gt; {
-      return (
-      &lt;Draggable draggableId={`${index}`} key={index} index={index}&gt;
-      {(provided) =&gt; (
+import { FC } from 'react';
+import { Draggable } from 'react-beautiful-dnd';
+
+import { IItemTableProps } from './interface';
+
+import './style.scss';
+
+export const ItemTable: FC&lt;IItemTableProps&gt; = ({ item, index }) =&gt; {
+  return (
+  &lt;Draggable draggableId={`${index}`} key={index} index={index}&gt;
+    {(provided) =&gt; (
       &lt;tr
       {...provided.draggableProps}
       {...provided.dragHandleProps}
       ref={provided.innerRef}
       className='item'&gt;
-      &lt;td&gt;{item.id}&lt;/td&gt;
-      &lt;td&gt;{item.key}&lt;/td&gt;
-      &lt;td&gt;{item.AssetsCurrent || '-'}&lt;/td&gt;
-      &lt;td&gt;{item.IncomeTaxExpenseBenefit || '-'}&lt;/td&gt;
-      &lt;td&gt;{item.NetIncomeLoss || '-'}&lt;/td&gt;
-      &lt;td&gt;{item.OperatingIncomeLoss || '-'}&lt;/td&gt;
+        &lt;td&gt;{item.id}&lt;/td&gt;
+        &lt;td&gt;{item.key}&lt;/td&gt;
+        &lt;td&gt;{item.AssetsCurrent || '-'}&lt;/td&gt;
+        &lt;td&gt;{item.IncomeTaxExpenseBenefit || '-'}&lt;/td&gt;
+        &lt;td&gt;{item.NetIncomeLoss || '-'}&lt;/td&gt;
+        &lt;td&gt;{item.OperatingIncomeLoss || '-'}&lt;/td&gt;
       &lt;/tr&gt;
-      )}
-      &lt;/Draggable&gt;
-      );
-      };
-      </pre>
+    )}
+  &lt;/Draggable&gt;
+  );
+};
+    </pre>
     </div>
   </div>
   <div class="container">
@@ -121,7 +125,7 @@
   </div>
   <div class="container">
     <div class="title_container">My Projects</div>
-    <div>1
+    <div>
       <ul class="contact_ul">
         <li>
           <div class="text_container">
@@ -135,8 +139,8 @@
         </li>
         <li>
           <div class="text_container">
-            <b>And different my works:</b>
-            <a href="https://thatv1n.github.io/Task-FNTASTIC">https://thatv1n.github.io/Task-FNTASTIC</a>,
+            <b>And different my works:</b> <a
+              href="https://thatv1n.github.io/Task-FNTASTIC">https://thatv1n.github.io/Task-FNTASTIC</a>,
             <a href="https://thatv1n.github.io/calculator/">https://thatv1n.github.io/calculator/</a>
           </div>
         </li>
@@ -144,5 +148,4 @@
     </div>
   </div>
 </body>
-
 </html>
